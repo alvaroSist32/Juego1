@@ -4,9 +4,6 @@
 
 using namespace std;
 
-// =========================
-// CLASE DEL JUEGO
-// =========================
 class JuegoAdivinar {
 
 private:
@@ -15,14 +12,12 @@ private:
 
 public:
 
-    // Constructor
     JuegoAdivinar() {
         srand(time(0));
         numeroSecreto = rand() % 100 + 1;
         intentos = 0;
     }
 
-    // Metodo para iniciar el juego
     void jugar() {
 
         int intento;
@@ -52,12 +47,9 @@ public:
     }
 };
 
-// =========================
-// FUNCION PRINCIPAL
-// =========================
 int main() {
 
-    JuegoAdivinar juego; // objeto
+    JuegoAdivinar juego;
 
     juego.jugar();
 
